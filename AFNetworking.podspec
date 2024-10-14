@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Security' do |ss|
     ss.source_files = 'AFNetworking/AFSecurityPolicy.{h,m}'
+    ss.resource_bundles = { 'AFNetworking_Privacy' => 'AFNetworking/PrivacyInfo.xcprivacy' }
   end
 
   s.subspec 'Reachability' do |ss|
